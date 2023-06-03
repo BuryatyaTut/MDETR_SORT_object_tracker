@@ -42,10 +42,10 @@ my_out_path = "./myout.mp4"
 i_want_to_track = "person"
 is_logging = True  # Generate log.txt in MOT challenge format
 max_age = 5  # How many frames can an object be missing before it is destroyed
-min_htis = 4  # How many frames do I need for the object to start to track
+min_hits = 4  # How many frames do I need for the object to start to track
 iou = 0.3
 
-track(my_file_path, my_out_path, i_want_to_track, max_age=max_age, min_htis=min_htis, iou_threshold=iou, log=is_logging)
+track(my_file_path, my_out_path, i_want_to_track, max_age=max_age, min_hits=min_hits, iou_threshold=iou, log=is_logging)
 
 ```
 
